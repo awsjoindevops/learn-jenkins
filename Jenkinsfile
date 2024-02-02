@@ -43,7 +43,7 @@ options {
                 sh """
                     echo "$GREETING"
                     echo "I wrote Shell"
-                    //sleep 10   
+                    #sleep 10   
 
                 """
             }
@@ -65,7 +65,7 @@ options {
             }
         }
     
-
+    }
 
 //POST _ AFTER BUILD
     post { 
