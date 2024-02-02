@@ -7,7 +7,10 @@ pipeline {
 environment { 
         GREETING='HELLo JENKINS'
     }
-
+options {
+        // Timeout counter starts AFTER agent is allocated
+        timeout(time: 1, unit: 'SECONDS')
+    }
     stages {
         stage('Build') {
             steps {
@@ -24,7 +27,7 @@ environment {
                 sh """
                     echo "$GREETING"
                     echo "I wrote Shell"
-                    env    
+                    // env    
 
                 """
             }
