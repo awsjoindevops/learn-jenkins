@@ -59,6 +59,7 @@ options {
 
                     echo "Choice: ${params.CHOICE}"
 
+                    
                     echo "Password: ${params.PASSWORD}" 
 
                 """
