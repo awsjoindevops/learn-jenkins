@@ -22,17 +22,18 @@ pipeline {
             }
         }
     }
-}
+
 
 //POST _ AFTER BUILD
- post { 
+    post { 
         always { 
-            echo 'I will always say Hello again!'
-        }
+                 echo 'I will always say Hello again!'
+                }
         failure { 
-            echo 'Failure Status'
-        }
+                echo 'Failure Status'
+                }
         success { 
-            echo 'Success Status'
-        }
+                echo 'Success Status'
+                }
     }
+}
