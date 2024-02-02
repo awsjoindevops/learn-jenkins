@@ -27,7 +27,7 @@ options {
                 sh """
                     echo "$GREETING"
                     echo "I wrote Shell"
-                    // env    
+                    sleep 10   
 
                 """
             }
