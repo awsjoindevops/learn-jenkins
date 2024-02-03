@@ -5,7 +5,7 @@
         }
     }
     environment { 
-            GREETING='HELLo JENKINS'
+            GREETING='HELLo JENKINS.'
         }
     options {
             // Timeout counter starts AFTER agent is allocated
